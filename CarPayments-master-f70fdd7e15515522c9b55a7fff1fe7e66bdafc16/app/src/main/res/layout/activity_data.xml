@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label_carValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/label_carValue"/>
+
+    <EditText
+        android:id="@+id/data_carValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/label_carValue"
+        android:layout_alignLeft="@+id/data_leaseRate"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/label_carValue"
+        android:text="@string/carValueDecimal"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/label_downPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_carValue"
+        android:layout_marginTop="40dp"
+        android:padding="10dip"
+        android:text="@string/label_downPayment"/>
+
+    <EditText
+        android:id="@+id/data_downPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/label_downPayment"
+        android:layout_alignLeft="@+id/data_leaseRate"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/label_downPayment"
+        android:text="@string/downPaymentDecimal"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/label_months"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/label_downPayment"
+        android:layout_marginTop="40dp"
+        android:padding="10dip"
+        android:text="@string/label_months" />
+
+    <EditText
+        android:id="@+id/data_months"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/data_leaseRate"
+        android:layout_alignBottom="@+id/label_months"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/label_months"
+        android:text="@string/months2"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/label_leaseRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="10dip"
+        android:layout_below="@+id/label_months"
+        android:text="@string/label_leaseRate"/>
+
+    <EditText
+        android:id="@+id/data_leaseRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/label_leaseRate"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/label_leaseRate"
+        android:layout_marginLeft="25dp"
+        android:text="@string/leaseRateDecimal"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/data_leaseRate"
+        android:layout_marginTop="50dp"
+        android:onClick="goBack"
+        android:text="@string/done"/>
+
+</RelativeLayout>
